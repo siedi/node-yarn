@@ -1,6 +1,7 @@
 FROM node:8-alpine
 
 RUN apk --no-cache add \
+    --virtual builds-deps \
     git \
     ca-certificates \
     wget \
